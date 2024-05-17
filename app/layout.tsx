@@ -19,11 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="mx-40 my-8">
+        <div className="lg:mx-40 lg:mt-8 md:mx-32 md:mt-4 mx-4 mt-3">
         <TopNav />
         {children}
           <Footer/>
-      </div> 
+      </div>
+      {/* <div className="bg-[url('../public/gradient.png')] bg-contain w-full h-10"></div> */}
       </body>
     </html>
   );

@@ -1,16 +1,17 @@
 import { ReactNode } from "react";
 import Image from "next/image";
-import arrow from "@/public/arrow.svg";
+import arrowURL from "@/public/arrow.svg";
 
 interface ButtonProps {
   children: ReactNode;
+  arrow?: boolean;
 }
 
-function Button({ children }: ButtonProps) {
+function Button({ children, arrow = true }: ButtonProps) {
   return (
-    <button className="border-zinc-50 pl-4 pr-2 text-xl py-2 border my-10 rounded-full flex items-center ">
+    <button className="border-[#44445e] pl-4 pr-2 text-xl py-2 border-2 my-10 rounded-full flex items-center bg-gradient-to-b from-[#262636] via-transparent to-transparent">
       {children}
-      <Image src={arrow} alt="arrow" />
+      {arrow && <Image src={arrowURL} alt="arrow" />}
     </button>
   );
 }
