@@ -90,7 +90,7 @@ export default function Home() {
       <section className="mx-4">
           <Cards/>
       </section>
-      <section className="my-8">
+      <section className="my-10 md:my-24 lg:my-36">
         <div className="my-8"><h1 className="text-6xl">CodePens</h1></div>
         <div>
           <Works/>
