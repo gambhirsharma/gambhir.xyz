@@ -25,7 +25,7 @@ body {
   /*   ) */
   /*   rgb(var(--background-start-rgb)); */
   background-color: #000;
-  background-image: url(../public/BG.PNG);
+  background-image: url(../public/BG.png);
   /* background-repeat: no-repeat; */
   background-size: contain;
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../public/grain/finalfinal.jpg) */
