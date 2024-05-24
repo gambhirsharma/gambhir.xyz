@@ -3,28 +3,31 @@ import React, { useEffect, useState } from "react";
 import arrow from "@/public/arrow.svg";
 import hoverArrow from "@/public/hoverArrow.svg";
 import Image from "next/image";
-import AnimatedCursor from "react-animated-cursor";
 import Link from "next/link";
+import moon from "@/public/codepens/moon.png";
+import radar from "@/public/codepens/Radar.png";
+import supabaseCard from "@/public/codepens/supabase-card.png";
+import minnion from "@/public/codepens/Minions.png";
 
 const data = [
   {
     title: "Moon",
-    imgURL: "../../public/codepens/",
+    imgURL: moon, 
     URL: "https://codepen.io/gambhirsharma/",
   },
   {
-    title: "Minnion",
-    imgURL: "../../public/codepens/",
+    title: "Minions",
+    imgURL: minnion,
     URL: "https://codepen.io/gambhirsharma/",
   },
   {
     title: "Supabase Card",
-    imgURL: "../../public/codepens/",
+    imgURL: supabaseCard,
     URL: "https://codepen.io/gambhirsharma/",
   },
   {
-    title: "Radar CSS",
-    imgURL: "../../public/codepens/",
+    title: "Radar",
+    imgURL: radar,
     URL: "https://codepen.io/gambhirsharma/",
   },
 ];
@@ -82,12 +85,12 @@ function Works() {
               onMouseEnter={() => setHoverIndex(index)}
               onMouseLeave={() => setHoverIndex(null)}
             >
-              <div className="flex text-4xl items-center justify-between">
+              <div className="flex text-2xl lg:text-4xl items-center justify-between">
                 <div className="flex items-center">
                   {hoverIndex === index && (
-                    <>
-                      <Image src={arrow} alt="" height={100} width={100} />
-                    </>
+                    <div className="border-2 border-white rounded-md mx-5">
+                      <Image src={item.imgURL} alt="" height={100} width={100} />
+                    </div>
                   )}
                   {""}
                   {item.title}
@@ -109,3 +112,11 @@ function Works() {
 }
 
 export default Works;
+
+/*
+ -- list of codepen to include in the section: 
+ - Moon 
+ - Minnion
+ - Radar
+ - 
+ */
