@@ -120,3 +120,18 @@ export default Works;
  - Radar
  - 
  */
+// console.clear()
+console.log(
+    "%cg%ca%cm%cb%ch%ci%cr%c.%cx%cy%cz",
+    "color:#E53B36; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#E53B36; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#E53B36; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#D346A5; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#D346A5; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#D346A5; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#D346A5; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#C84BE4; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#C84BE4; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#C84BE4; font-family:system-ui; font-size:4rem; font-weight:bold",
+    "color:#C84BE4; font-family:system-ui; font-size:4rem; font-weight:bold",
+);
