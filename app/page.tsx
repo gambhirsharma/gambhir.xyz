@@ -93,10 +93,10 @@ export default function Home() {
           presence through my personal website. By showcasing my technical
           expertise and diverse project portfolio, I hope to attract clients
           seeking high-quality web development services. (If you reading this
-          then let me tell you it's ai generated text.) My website will
+          then let me tell you its ai generated text.) My website will
           highlight my skills in various programming languages and frameworks,
           demonstrating my ability to create responsive, efficient, and visually
-          appealing websites tailored to each client's needs.
+          appealing websites tailored to each client&apos;s needs.
         </div>
       </section>
       <section className="mx-4 lg:my-18">
@@ -113,7 +113,7 @@ export default function Home() {
       <section className="flex items-center justify-center flex-col ">
         <div className=" text-4xl lg:text-6xl uppercase">
           <h1 className="flex items-center justify-center">
-            let's
+            let&apos;s
             <Image
               src={eye}
               alt=""
