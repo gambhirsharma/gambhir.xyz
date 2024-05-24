@@ -26,6 +26,7 @@ export default function Home() {
         <Image
           src={graph}
           height={500}
+          priority={true}
           alt="graph"
           className="absolute opacity-65 translate-y-[50px] z-0"
         />
