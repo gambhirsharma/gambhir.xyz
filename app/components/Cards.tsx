@@ -145,13 +145,25 @@ export default function Cards() {
             onClick={() => handleScrollTo(false)}
             className="border-[#44445e] border-2 rounded-full flex items-center bg-gradient-to-b from-[#262636] via-transparent to-transparent p-3"
           >
-            <Image src={leftArrow} alt="left Arrow" height={30} width={30} />
+            <Image
+              src={leftArrow}
+              alt="left Arrow"
+              height={30}
+              width={30}
+              className="w-auto"
+            />
           </button>
           <button
             onClick={() => handleScrollTo(true)}
             className="border-[#44445e] border-2 rounded-full flex items-center bg-gradient-to-b from-[#262636] via-transparent to-transparent p-3"
           >
-            <Image src={rightArrow} alt="left Arrow" height={30} width={30} />
+            <Image
+              src={rightArrow}
+              alt="left Arrow"
+              height={30}
+              width={30}
+              className="w-auto"
+            />
           </button>
         </div>
       </div>
