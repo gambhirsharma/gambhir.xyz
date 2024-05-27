@@ -10,7 +10,6 @@ import rightArrow from "@/public/Right-Arrow.svg";
 import portfolio from "@/public/Projects/Portfolio-website.png";
 import vesper from "@/public/Projects/Vesper.png";
 import nftNetwork from "@/public/Projects/NFT-Network.png";
-
 import {
   SiTypescript,
   SiTailwindcss,
@@ -148,9 +147,9 @@ export default function Cards() {
             <Image
               src={leftArrow}
               alt="left Arrow"
-              height={30}
-              width={30}
-              className="w-auto"
+              height={10}
+              width={10}
+              className="w-auto h-[30px]"
             />
           </button>
           <button
@@ -160,9 +159,9 @@ export default function Cards() {
             <Image
               src={rightArrow}
               alt="left Arrow"
-              height={30}
-              width={30}
-              className="w-auto"
+              height={10}
+              width={10}
+              className="w-auto h-[30px]"
             />
           </button>
         </div>

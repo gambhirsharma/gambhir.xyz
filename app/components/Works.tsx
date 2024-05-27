@@ -97,9 +97,10 @@ function Works() {
                 </div>
                 <Image
                   src={hoverIndex === index ? hoverArrow : arrow}
-                  alt=""
+                  alt="arrow"
                   height={100}
                   width={100}
+                    className="w-auto md:h-[100px] h-[70px]"
                 />
               </div>
             </li>

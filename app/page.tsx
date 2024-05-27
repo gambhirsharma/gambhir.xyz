@@ -76,9 +76,9 @@ export default function Home() {
           <h1>Developer</h1>
         </div>
       </section>
-      <section className="md:h-[55vh] w-full flex items-start justify-center pt-28 flex-col md:flex-row">
+      <section className="md:h-[55vh] w-full flex items-start justify-center lg:px-20 flex-col md:flex-row lg:mt-44 mt-10 md:my-24">
         <div className=" md:w-1/2 w-full">
-          <div className="text-5xl uppercase">
+          <div className="text-5xl uppercase ">
             <h1>discover the</h1>
             <h1>professional</h1>
             <h1>journey of a</h1>
@@ -99,18 +99,18 @@ export default function Home() {
           appealing websites tailored to each client&apos;s needs.
         </div>
       </section>
-      <section className="mx-4 lg:my-18">
+      <section className="mx-4 lg:my-18 lg:mt-44 mt-10 md:my-24">
         <Cards />
       </section>
       <section className="my-10 md:my-24 lg:my-44">
         <div className="">
-          <h1 className="text-6xl my-4 mx-4">CodePens</h1>
+          <h1 className="text-4xl lg:text-6xl my-4 mx-4">CodePens</h1>
         </div>
         <div>
           <Works />
         </div>
       </section>
-      <section className="flex items-center justify-center flex-col ">
+      <section className="flex items-center justify-center flex-col">
         <div className=" text-4xl lg:text-6xl uppercase">
           <h1 className="flex items-center justify-center">
             let&apos;s

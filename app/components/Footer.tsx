@@ -15,7 +15,7 @@ const socialLinks = [
 function Footer() {
   return (
     <footer
-      className="border-gray-600 border-t flex items-center justify-between py-5 mt-5 lg:mt-44 px-4 flex-col md:flex-row relative"
+      className="border-gray-600 border-t flex items-center justify-between py-5 mt-5 lg:mt-44 px-4 flex-col md:flex-row relative bg-red-400"
     >
       <Image src={gradient} alt="" height={500} width={500} className=" aspect-[4722/1613] h-auto w-[150%] bottom-0 absolute left-0"  />
       <div className="flex space-x-6">
