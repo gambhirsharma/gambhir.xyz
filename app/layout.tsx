@@ -4,6 +4,7 @@ import "./globals.css";
 import TopNav from "./components/TopNav";
 import Footer from "./components/Footer";
 import { Analytics } from '@vercel/analytics/react';
+import GoogleAnalytics from "./about/utils/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics/>
       <body className={inter.className}>
         <div className="lg:mx-40 lg:mt-8 md:mx-32 md:mt-4 mx-4 mt-3">
           <TopNav />
