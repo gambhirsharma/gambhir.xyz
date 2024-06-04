@@ -54,7 +54,7 @@ export default function Home() {
             height={240}
             width={226}
             // fill
-            sizes="(max-width: 768px) 80px, 240px"
+//            sizes="(max-width: 768px) 80px, 240px"
             // sizes="(max-width: 768px) 80px, 240px"
           />
           <div className="inline-block p-4 translate-x-[5%] lg:translate-x-[20%] bg-center bg-auto bg-no-repeat">
@@ -67,7 +67,7 @@ export default function Home() {
              */}
             <Image
               src={software}
-              height={600}
+              height={127.31}
               width={600}
               alt="text: Software"
               className="bg-no-repeat"
