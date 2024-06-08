@@ -50,21 +50,14 @@ export default function Home() {
           <Image
             src={model}
             alt="model"
-            className="aspect-[226/240] absolute md:-translate-x-48 -translate-x-20 h-auto md:w-[240px] w-[120px]"
+            className="aspect-[226/240] absolute md:-translate-x-48 -translate-x-20 h-auto md:w-[240px] w-[120px] hidden md:flex"
             height={240}
             width={226}
             // fill
-//            sizes="(max-width: 768px) 80px, 240px"
+            //            sizes="(max-width: 768px) 80px, 240px"
             // sizes="(max-width: 768px) 80px, 240px"
           />
-          <div className="inline-block p-4 translate-x-[5%] lg:translate-x-[20%] bg-center bg-auto bg-no-repeat">
-            {/*               <h1
-              className="
-            bg-gradient-to-r from-[#EA3B2A] via-[#D64186] to-[#C34CFB] text-transparent bg-clip-text font-semibold"
-            >
-              Software
-            </h1>
-             */}
+          <div className="inline-block md:p-4 px-0 md:translate-x-[5%] lg:translate-x-[20%] bg-center bg-auto bg-no-repeat">
             <Image
               src={software}
               height={127.31}
@@ -76,9 +69,9 @@ export default function Home() {
           <h1>Developer</h1>
         </div>
       </section>
-      <section className="md:h-[55vh] w-full flex items-start justify-center lg:px-20 flex-col md:flex-row lg:mt-44 mt-10 md:my-24">
-        <div className=" md:w-1/2 w-full">
-          <div className="text-5xl uppercase ">
+      <section className="lg:h-[40vh] w-full flex items-start justify-center lg:px-20 flex-col lg:flex-row lg:mt-32 mt-10 md:my-18  ">
+        <div className=" lg:w-1/2 w-full">
+          <div className="lg:text-5xl text-5xl uppercase  ">
             <h1>discover the</h1>
             <h1>professional</h1>
             <h1>journey of a</h1>
@@ -88,13 +81,13 @@ export default function Home() {
             <Button>About me</Button>
           </Link>
         </div>
-        <div className="text-gray-400  md:w-1/2 w-full">
+        <div className="text-gray-400  lg:w-1/2 w-full text-md">
           As a dedicated web developer, I aim to establish a strong online
           presence through my personal website. By showcasing my technical
           expertise and diverse project portfolio, I hope to attract clients
           seeking high-quality web development services. (If you reading this
-          then let me tell you its ai generated text.) My website will
-          highlight my skills in various programming languages and frameworks,
+          then let me tell you its ai generated text.) My website will highlight
+          my skills in various programming languages and frameworks,
           demonstrating my ability to create responsive, efficient, and visually
           appealing websites tailored to each client&apos;s needs.
         </div>
@@ -104,7 +97,7 @@ export default function Home() {
       </section>
       <section className="my-10 md:my-24 lg:my-44">
         <div className="">
-          <h1 className="text-4xl lg:text-6xl my-4 mx-4">CodePens</h1>
+          <h1 className="text-5xl md:text-8xl my-10">CodePens</h1>
         </div>
         <div>
           <Works />

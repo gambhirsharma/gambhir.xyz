@@ -138,7 +138,7 @@ export default function Cards() {
   return (
     <>
       <div className="flex items-center justify-between">
-        <h1 className="text-4xl md:text-6xl">Projects</h1>
+        <h1 className="text-5xl md:text-8xl my-5">Projects</h1>
         <div className="flex items-center space-x-3">
           <button
             onClick={() => handleScrollTo(false)}
