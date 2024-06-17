@@ -1,3 +1,5 @@
+'use client'
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import check from "@/public/check.png";
 import graph from "@/public/graph.svg";
@@ -11,10 +13,39 @@ import vim from "@/public/vim.png";
 import neovim from "@/public/neovim.png";
 import eye from "@/public/Eye.png";
 import software from "@/public/software.svg";
+import Spinner from "./components/Spinner";
+
+const images = [
+  '../public/BG.png',
+  '../public/model.png',
+  '../public/software.svg',
+];
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+    useEffect(() => {
+    const imagePromises = images.map(src => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    });
+
+    Promise.all(imagePromises)
+      .then(() => setLoading(false))
+      .catch(error => {
+        console.error('Failed to load images', error);
+        setLoading(false); // handle error accordingly
+      });
+  }, []);
   return (
     <main className="select-none">
+      {loading ? (
+        <Spinner />
+      ) : (
+          <>
       <section className="uppercase lg:text-8xl text-5xl md:text-8xl flex flex-col items-center h-[80vh] justify-center ">
         <Image
           src={check}
@@ -126,6 +157,8 @@ export default function Home() {
           <Button>Drop me a DM</Button>
         </Link>
       </section>
+      </>
+      )}
     </main>
   );
 }
