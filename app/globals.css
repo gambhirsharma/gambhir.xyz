@@ -36,3 +36,27 @@ body {
     text-wrap: balance;
   }
 }
+
+
+/* width */
+.custom-scroll-bar::-webkit-scrollbar {
+  color-scheme: dark;
+    width: 2px;
+}
+
+/* Track */
+/*.custom-scroll-bar::-webkit-scrollbar-track {*/
+/*    background: #888;*/
+/*    border-radius: 5px;*/
+/*}*/
+/**/
+/* Handle */
+/*.custom-scroll-bar::-webkit-scrollbar-thumb {*/
+/*    background: #000;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/* Handle on hover */
+/*.custom-scroll-bar::-webkit-scrollbar-thumb:hover {*/
+/*    background: #000;*/
+/*}*/

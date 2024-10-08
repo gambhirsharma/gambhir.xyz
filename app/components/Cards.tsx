@@ -4,8 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import design from "@/design.png";
 import model from "@/public/model.png";
-import Button from "./Button";
-import leftArrow from "@/public/Left-Arrow.svg";
+import Button from "./Button"; import leftArrow from "@/public/Left-Arrow.svg";
 import rightArrow from "@/public/Right-Arrow.svg";
 import portfolio from "@/public/Projects/Portfolio-website.png";
 import vesper from "@/public/Projects/Vesper.png";
@@ -106,7 +105,7 @@ export default function Cards() {
   const handleScrollTo = (direction: boolean) => {
     // Get the container element
     const container = document.getElementById("card-container");
-    console.log(container);
+    // console.log(container);
 
     if (container) {
       // Get the current scrollLeft position
@@ -137,7 +136,7 @@ export default function Cards() {
 
   return (
     <>
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <h1 className="text-5xl md:text-8xl my-5">Projects</h1>
         <div className="flex items-center space-x-3">
           <button
@@ -168,7 +167,7 @@ export default function Cards() {
       </div>
       {/*  */}
       <div
-        className="mb-10 overflow-y-scroll p-5 w-[100vw] -left-8 md:-left-36 lg:-left-44 relative lg:px-44 md:px-36 px-4"
+        className="mb-10 overflow-y-scroll p-5 w-[98.5vw] -left-8 md:-left-36 lg:-left-44 relative lg:px-44 md:px-36 px-4 b-0 custom-scroll-bar"
         id="card-container"
       >
         <div className="flex space-x-5 w-fit justify-center items-center">
